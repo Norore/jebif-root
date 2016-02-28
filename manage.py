@@ -1,6 +1,7 @@
 #!/usr/bin/env python2
 import setup_env
-from django.core.management import execute_manager
+from django.core.management import execute_from_command_line
+import os,sys
 try:
     import settings # Assumed to be in the same directory.
 except ImportError:
@@ -9,4 +10,5 @@ except ImportError:
     sys.exit(1)
 
 if __name__ == "__main__":
-    execute_manager(settings)
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
+    execute_from_command_line(sys.argv)
