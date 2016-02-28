@@ -2,6 +2,7 @@
 from django.conf.urls import *
 # django.conf.urls.defaults removed from django 1.4
 from django.contrib import admin
+from django.views.generic import RedirectView
 
 from jebif import settings
 
@@ -17,10 +18,10 @@ urlpatterns = patterns('',
     (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
 
 	(r'^accounts/',		include('django.contrib.auth.urls')),
-	(r'^cv/',			include('cv.urls')),
+#	(r'^cv/',			include('cv.urls')),
 	(r'^election/', 	include('election.urls')),
 	(r'^membership/', 	include('membership.urls')),
 
-	(r'^$', 'django.views.generic.simple.redirect_to', {'url': 'http://jebif.fr'}),
+	(r'^$', RedirectView.as_view(url='http://jebif.fr')),
 )
 
