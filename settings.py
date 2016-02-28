@@ -83,7 +83,7 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     PROJECT_PATH + "/templates",
-    PROJECT_PATH + "/cv/templates",
+    # PROJECT_PATH + "/cv/templates",
     ADMIN_TEMPLATE_DIR
 )
 
