@@ -1,5 +1,6 @@
 
-from django.conf.urls.defaults import *
+from django.conf.urls import *
+# django.conf.urls.defaults removed from django 1.4
 from django.contrib import admin
 
 from jebif import settings
