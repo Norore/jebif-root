@@ -6,6 +6,8 @@ Replace by @atomic
 
 _Source:_ http://stackoverflow.com/a/21863459/1866679
 
+> Done!
+
 ## django.views.generic.simple ##
 
 django.views.generic.simple was deprecated and doesn't exist beyond django 1.4. Is there a specific reason you are using a development branch of django and not the latest stable version (1.4.2)?
