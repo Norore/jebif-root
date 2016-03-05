@@ -19,14 +19,7 @@ DATABASES = {
                     'PORT': '',
                 }
             }
-"""
-DATABASE_ENGINE = 'sqlite3'    # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-DATABASE_NAME = os.path.join(PROJECT_PATH,'database.sqlite3')             # Or path to database file if using sqlite3.
-DATABASE_USER = ''             # Not used with sqlite3.
-DATABASE_PASSWORD = ''         # Not used with sqlite3.
-DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.
-DATABASE_PORT = ''             # Set to empty string for default. Not used with sqlite3.
-"""
+
 ADMIN_TEMPLATE_DIR = "/var/lib/django/contrib/admin/templates"
 ADMIN_MEDIA_ROOT = ""
 from jebif.localsettings import *
@@ -105,11 +98,11 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.admin',
     'django.contrib.admindocs',
-#    'cv.registration',
-#    'cv.candidate',
-#    'cv.users',
-	'membership',
-	'election',
+    'cv.registration',
+    'cv.candidate',
+    'cv.users',
+    'membership',
+    'election',
 )
 
 AUTH_PROFILE_MODULE = 'users.UserProfile'
