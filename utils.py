@@ -1,8 +1,9 @@
 from django import forms
-from django.forms.fields import DEFAULT_DATE_INPUT_FORMATS
+#from django.forms.fields import DEFAULT_DATE_INPUT_FORMATS
+#from django.utils import formats
 import datetime
 
-DEFAULT_DATE_OUTPUT_FORMATS = DEFAULT_DATE_INPUT_FORMATS[0]
+#DEFAULT_DATE_OUTPUT_FORMATS = DEFAULT_DATE_INPUT_FORMATS[0]
 
 ## Sibio form fields
 
