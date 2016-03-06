@@ -87,7 +87,7 @@ TEMPLATE_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     PROJECT_PATH + "/templates",
-    # PROJECT_PATH + "/cv/templates",
+    PROJECT_PATH + "/cv/templates",
     ADMIN_TEMPLATE_DIR
 )
 
@@ -109,6 +109,7 @@ AUTH_PROFILE_MODULE = 'users.UserProfile'
 DATE_FORMAT = 'd/m/Y'
 DATE_INPUT_FORMAT = '%d/%m/%Y'
 
+#LOGIN_URL = "/%saccounts/login/" % ROOT_URL
 LOGIN_URL = "/%saccounts/login/" % ROOT_URL
 LOGIN_REDIRECT_URL = "/%smembership/subscription/me/update/" % ROOT_URL
 REQUIRE_LOGIN_PATH = LOGIN_URL
