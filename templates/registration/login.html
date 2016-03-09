@@ -19,7 +19,7 @@
 
                   <label for="password">Mot de passe</label>{{ form.password }}
                   <div class="cleaner"></div>
-				  <p>Mot de passe oublié&nbsp;? <a href="{% url 'django.contrib.auth.views.password_reset' uid token %}">demander un nouveau mot de passe</a>.</p>
+				  <p>Mot de passe oublié&nbsp;? <a href="{% url 'password_reset' %}">demander un nouveau mot de passe</a>.</p>
                   <br/>
                   <input type="image" src="{{ MEDIA_URL }}cv/img/layout/login/btn-login.png" value="Connexion" class="submit" />
               </form>
