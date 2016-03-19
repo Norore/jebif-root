@@ -2,6 +2,7 @@
 from django.conf.urls import patterns, include
 from django.contrib import admin
 from django.views.generic import RedirectView
+from django.contrib.auth.views import password_reset
 
 admin.autodiscover()
 
