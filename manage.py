@@ -1,7 +1,12 @@
 #!/usr/bin/env python
 import setup_env
+<<<<<<< HEAD
 from django.core.management import execute_manager #execute_from_command_line
 #import os,sys
+=======
+from django.core.management import execute_manager
+
+>>>>>>> reset_project
 try:
     import settings # Assumed to be in the same directory.
 except ImportError:
